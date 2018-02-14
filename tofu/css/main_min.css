@@ -112,6 +112,17 @@ h3 {
     opacity: 1
 }
 
+.menu-title{
+	display: block;
+	position: relative;
+	clear: both;
+}
+
+.main-menu{
+	display: block;
+	position: relative;
+}
+
 .menu {
     top: 0;
     left: -290px;
@@ -130,6 +141,8 @@ h3 {
 }
 
 .menu ul {
+	display: block;
+	position: relative;
     margin: 0;
     padding: 0;
     list-style: none
