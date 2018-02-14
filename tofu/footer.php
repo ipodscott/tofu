@@ -5,7 +5,7 @@
         </div>
     </div>
     
-   <link href="//fonts.googleapis.com/css?family=Lato:300,400,700|Oswald:400,500,600,700|Material+Icons" rel="stylesheet">
+   <link href="//fonts.googleapis.com/css?family=Material+Icons" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="<?php bloginfo('template_directory'); ?>/css/main_min.css">
     <script src="<?php bloginfo('template_directory'); ?>/js/jquery-2.2.4.min.js"></script>
      <script src="<?php bloginfo('template_directory'); ?>/js/scripts_min.js"></script>

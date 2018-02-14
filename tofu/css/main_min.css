@@ -7,7 +7,6 @@ html {
 body {
     margin: 0;
     padding: 0;
-    font-family: 'Lato', sans-serif;
     font-weight: 300;
     background-color: #e3e3e3;
     color: #3e3e3e;
@@ -45,86 +44,11 @@ body.fade {
     overflow: hidden
 }
 
-.full.center {
-    text-align: center
-}
 
-btn,
-.btn {
-    font-family: 'Lato', sans-serif;
-    border-width: 1px;
-    border-style: solid;
-    border-color: #999;
-    padding: 8px 8px 8px 14px;
-    text-align: center;
-    background-color: rgba(0, 0, 0, .8);
-    box-shadow: 0 0 5px 0 rgba(0, 0, 0, .63);
-    -webkit-box-shadow: 0 0 5px 0 rgba(0, 0, 0, .63);
-    color: #efefef;
-    letter-spacing: .5em;
-    font-weight: 700;
-    text-transform: uppercase;
-    letter-spacing: .5em;
-    font-size: 12px;
-    margin: 30px auto 0 auto;
-    cursor: pointer;
-    transition: all 0.5s
-}
-
-btn:hover,
-.btn:hover {
-    color: #333;
-    background-color: #ccc;
-    border-width: 1px;
-    border-style: solid;
-    border-color: #333
-}
-
-btn a,
-.btn a {
-    color: #fff;
-    text-decoration: none
-}
-
-ul,
-p {
-    font-weight: 400;
-    line-height: 1.5em;
-    font-size: 18px;
-    margin: 0 0 1.5em 0;
-    font-family: 'Lato', sans-serif
-}
-
-ul {
-    list-style-position: inside;
-    padding: 0;
-    margin: 0;
-    display: inline-block;
-    width: 100%
-}
-
-.full ul li {
-    list-style: circle;
-    display: block;
-    float: left;
-    width: calc(50% - 20px);
-    padding: 0;
-    margin: 0;
-    transition: all 0.5s
-}
-
-a {
-    color: #000;
-    text-decoration: none
-}
-
-p span .material-icons {
-    font-size: 16px
-}
 
 h1 {
-    font-family: 'Oswald', sans-serif;
     font-weight: 400;
+    font-family: 'Oswald', sans-serif;
     letter-spacing: .125em;
     text-transform: uppercase;
     line-height: 1.25em;
@@ -135,7 +59,6 @@ h1 {
 }
 
 h2 {
-    font-family: 'Oswald', sans-serif;
     text-transform: uppercase;
     font-weight: 500;
     letter-spacing: .25em;
@@ -152,7 +75,6 @@ h2 {
 }
 
 h3 {
-    font-family: 'Lato', sans-serif;
     text-transform: uppercase;
     font-weight: 600;
     letter-spacing: .125em;
@@ -161,246 +83,7 @@ h3 {
     margin: 0 0 10px 0
 }
 
-.center {
-    text-align: center
-}
 
-img {
-    max-width: 100%!important;
-    height: auto
-}
-
-.dark {
-    background-color: #212121;
-    color: #efefef
-}
-
-.light {
-    background-color: #e3e3e3;
-    color: #333
-}
-
-.panel {
-    display: block;
-    position: relative;
-    clear: both;
-    height: auto;
-    width: calc(100% - 60px);
-    padding: 0 30px 0 30px;
-    margin: 0 0 60px 0;
-    float: left
-}
-
-.panel-overlay {
-    position: absolute;
-    width: calc(100% + 60px);
-    height: 100%;
-    top: 0;
-    left: -30px;
-    background-color: rgba(255, 255, 255, .4);
-    -webkit-box-shadow: inset 0 0 15px 0 #000;
-    box-shadow: inset 0 0 15px 0 #000;
-    z-index: 0
-}
-
-.panel-overlay.dark {
-    background-color: rgba(0, 0, 0, .4)
-}
-
-.vid-bg-box {
-    left: 0;
-    top: 0;
-    position: absolute;
-    height: 100%;
-    width: 100%;
-    background-color: #000;
-    overflow: hidden
-}
-
-.video_background {
-    position: absolute;
-    bottom: 0;
-    right: 0;
-    min-width: 100%;
-    min-height: 100%;
-    width: auto;
-    height: auto;
-    overflow: hidden
-}
-
-.full-panel {
-    display: table;
-    position: relative;
-    height: 100vh;
-    min-height: 100%;
-    width: calc(100% - 60px);
-    padding: 30px;
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center top;
-    background-attachment: scroll;
-    clear: both;
-    overflow: hidden
-}
-
-.half-panel {
-    display: table;
-    position: relative;
-    height: 50vh;
-    min-height: 400px;
-    margin: 0 auto 120px auto;
-    width: 100%;
-    background-size: calc(100vh + 75vw);
-    background-repeat: no-repeat;
-    background-position: center top;
-    clear: both;
-    overflow: hidden;
-    background-attachment: scroll;
-    -webkit-transition: background-size 0.5s;
-    transition: background-size 0.5s;
-    background-color: #000
-}
-
-@media (max-width:760px) {
-    .full-panel {
-        padding-top: 60px;
-        padding-bottom: 60px
-    }
-}
-
-.main-content {
-    display: block;
-    position: relative;
-    margin: 0 auto;
-    max-width: 1200px;
-    width: calc(100% - 60px);
-    padding: 0
-}
-
-.cover-title-image {
-    display: block;
-    position: relative;
-    margin: 0 auto;
-    max-width: 700px!important;
-    opacity: .7
-}
-
-.full-panel .main-content,
-.panel .main-content,
-.half-panel .main-content {
-    width: calc(100%)
-}
-
-.middle {
-    display: table-cell;
-    position: relative;
-    vertical-align: middle;
-    width: 100%
-}
-
-.top {
-    display: block;
-    position: relative;
-    width: 100%
-}
-
-.full {
-    display: block;
-    float: none;
-    position: relative;
-    clear: both;
-    margin: 0 auto 0 auto;
-    width: calc(100% - 60px)
-}
-
-.break {
-    display: block;
-    position: relative;
-    clear: both;
-    top: 40px;
-    padding: 0 0 40px 0
-}
-
-.full.break {
-    margin: 0 0 40px 30px
-}
-
-.row {
-    display: inline-block;
-    position: relative;
-    clear: both;
-    width: 100%;
-    height: auto;
-    padding: 0 0 20px 0
-}
-
-.half {
-    display: block;
-    float: left;
-    width: calc(50% - 60px)
-}
-
-.sixty {
-    display: block;
-    float: left;
-    width: calc(60% - 60px)
-}
-
-.forty {
-    display: block;
-    float: left;
-    width: calc(40% - 60px)
-}
-
-.forty img {
-    width: 100%;
-    height: auto
-}
-
-.third {
-    display: block;
-    float: left;
-    width: calc(33.3% - 60px)
-}
-
-.quarter {
-    display: block;
-    float: left;
-    width: calc(25% - 30px)
-}
-
-.three-quarters {
-    display: block;
-    float: left;
-    width: calc(75% - 30px)
-}
-
-.full,
-.half,
-.third,
-.quarter,
-.three-quarters,
-.sixty,
-.forty {
-    padding: 10px 30px 40px 30px;
-    transition: all 0.5s;
-    text-align: left
-}
-
-.half p img {
-    width: 100%;
-    max-width: calc(100% - 60px)!important;
-    height: auto;
-    display: block;
-    position: relative;
-    margin: 20px 0 20px 0!important
-}
-
-
-
-ul .material-icons {
-    font-size: inherit
-}
 
 
 .shadow {
@@ -447,10 +130,6 @@ ul .material-icons {
     opacity: .6
 }
 
-
-
-
-
 .menu-btn {
     position: fixed;
     top: 10px;
@@ -480,7 +159,8 @@ ul .material-icons {
     height: 100%;
     z-index: 999;
     color: #efefef;
-    transition: all 0.75s
+    transition: all 0.75s;
+    font-family: 'Lato', sans-serif;
 }
 
 .show-menu {
