@@ -9,7 +9,7 @@
     <link rel="stylesheet" type="text/css" href="<?php bloginfo('template_directory'); ?>/css/main_min.css">
     <script src="<?php bloginfo('template_directory'); ?>/js/jquery-2.2.4.min.js"></script>
      <script src="<?php bloginfo('template_directory'); ?>/js/scripts_min.js"></script>
-    <?php wp_head(); ?>
+ 
       <?php wp_footer(); ?>
      
 </body>
