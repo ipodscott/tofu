@@ -108,6 +108,6 @@ $(document).scroll(function() {
 
   $(window).scroll(function(){
     $(".top").css("opacity", 1 - $(window).scrollTop() / 750);
-    $(".fadey").css("opacity", 0.6 - $(window).scrollTop() / 750);
+    $(".fadey").css("opacity", 1 - $(window).scrollTop() / 750);
     $(".logo img").css("margin-top", '300' + $(window).scrollTop() / 1500);
   });
