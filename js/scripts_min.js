@@ -34,11 +34,13 @@ $(document).ready(function() {
     });
     $(".menu-btn").click(function() {
         $(".menu").addClass('show-menu');
-        $(".menu-layer").fadeIn(500)
+        $(".menu-layer").fadeIn(500);
+        $("body").addClass('stop-scroll');
     });
     $(".menu ul li, .menu ul li a, .close-menu, .menu-layer").click(function() {
         $(".menu").removeClass('show-menu');
-        $(".menu-layer").delay(250).fadeOut(500)
+        $(".menu-layer").delay(250).fadeOut(500);
+        $("body").removeClass('stop-scroll');
     });
    
 
