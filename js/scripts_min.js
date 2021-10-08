@@ -14,18 +14,7 @@ $(document).ready(function() {
             }
         }
     });
-    var $container = jQuery('.acc-body'),
-        $acc_head = jQuery('.acc-head');
-    $acc_head.last().addClass('last');
-    $acc_head.on('click', function(e) {
-        if (jQuery(this).next().is(':hidden')) {
-            $acc_head.removeClass('active').next().slideUp(500);
-            jQuery(this).toggleClass('active').next().slideToggle(300)
-        } else {
-            jQuery(this).toggleClass('active').next().slideToggle(300)
-        }
-        e.preventDefault()
-    });
+    
     $(".modal-open").click(function() {
         $('.modal-box').fadeIn()
     });
