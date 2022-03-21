@@ -58,4 +58,31 @@ function preview_stuff()
 	  wp_enqueue_style( 'oswald', '//fonts.googleapis.com/css2?family=Oswald&display=swap',true,'1.1','all');
 	  wp_enqueue_style( 'mods', get_template_directory_uri() . '/css/mods.css',true,'1.1','all');
 	}
-	add_action('admin_footer', 'preview_stuff');	
+	add_action('admin_footer', 'preview_stuff');
+	
+/**
+ * Register our sidebars and widgetized areas.
+ *
+ */
+function primary_widgets_init() {
+
+	register_sidebar( array(
+		'name'          => 'Header',
+		'id'            => 'header',
+		'before_widget' => '<div class="header">',
+		'after_widget'  => '</div>',
+		'before_title'  => '',
+		'after_title'   => '',
+	) );
+	
+	register_sidebar( array(
+		'name'          => 'Footer',
+		'id'            => 'footer',
+		'before_widget' => '<div class="footer">',
+		'after_widget'  => '</div>',
+		'before_title'  => '',
+		'after_title'   => '',
+	) );
+
+}
+add_action( 'widgets_init', 'primary_widgets_init' );
