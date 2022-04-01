@@ -13,6 +13,7 @@
 </head>
 
 <body>
-<?php if ( is_active_sidebar( 'header' ) ) : ?>
-	<?php dynamic_sidebar( 'header' ); ?>
-<?php endif; ?>
+<div class="all" name="#top">
+	<?php if ( is_active_sidebar( 'header' ) ) : ?>
+		<?php dynamic_sidebar( 'header' ); ?>
+	<?php endif; ?>

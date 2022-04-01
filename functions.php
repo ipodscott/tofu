@@ -43,13 +43,20 @@ function register_my_menu() {
 }
 add_action( 'init', 'register_my_menu' );
 
-//Add SVG Mime Type
-
-function cc_mime_types($mimes) {
-  $mimes['svg'] = 'image/svg+xml';
-  return $mimes;
+// New generation image formats compatibility
+function wphelp_compatibility_new_image_formats( $mime_types ) {
+	$mime_types['webp'] = 'image/webp';
+	$mime_types['heic'] = 'image/heic';
+	$mime_types['heif'] = 'image/heif';
+	$mime_types['heics'] = 'image/heic-sequence';
+	$mime_types['heifs'] = 'image/heif-sequence';
+	$mime_types['avif'] = 'image/avif';
+	$mime_types['avis'] = 'image/avif-sequence';
+	$mime_types['svg'] = 'image/svg';
+	return $mime_types;
 }
-add_filter('upload_mimes', 'cc_mime_types');
+add_filter( 'upload_mimes', 'wphelp_compatibility_new_image_formats', 1, 1 );
+
 
 function preview_stuff()
 	// Adds preview stuff.
