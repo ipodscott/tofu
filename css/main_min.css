@@ -6,7 +6,6 @@ body{
 }
 body.stop-scroll{
 	overflow: hidden;
-	background-color: #000;
 }
 html {
     margin: 0;
