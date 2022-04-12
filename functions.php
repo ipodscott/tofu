@@ -38,10 +38,6 @@ function sdt_remove_ver_css_js( $src ) {
 
 //Register Menus
 
-function register_my_menu() {
-  register_nav_menu('main_menu',__( 'Main Menu' ));
-}
-add_action( 'init', 'register_my_menu' );
 
 // New generation image formats compatibility
 function wphelp_compatibility_new_image_formats( $mime_types ) {
@@ -95,6 +91,15 @@ function primary_widgets_init() {
 		'id'            => 'footer',
 		'before_widget' => '<div class="footer">',
 		'after_widget'  => '</div>',
+		'before_title'  => '',
+		'after_title'   => '',
+	) );
+	
+	register_sidebar( array(
+		'name'          => 'Main Navigation',
+		'id'            => 'main_navigation',
+		'before_widget' => '',
+		'after_widget'  => '',
 		'before_title'  => '',
 		'after_title'   => '',
 	) );

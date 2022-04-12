@@ -4,7 +4,9 @@
 
 </div>
 
- <?php include('includes/nav.php');?>  
+<?php if ( is_active_sidebar( 'main_navigation' ) ) : ?>
+	<?php dynamic_sidebar( 'main_navigation' ); ?>
+<?php endif; ?>
 
     <div class="open-overlay">
         <div class="open-overlay-box">
