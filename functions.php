@@ -103,10 +103,10 @@ function primary_widgets_init() {
 	register_sidebar( array(
 		'name'          => 'Main Navigation',
 		'id'            => 'main_navigation',
-		'before_widget' => '<div class="main-menu">',
-		'after_widget'  => '</div>',
-		'before_title'  => '<div class="menu-title">',
-		'after_title'   => '</div>',
+		'before_widget' => '',
+		'after_widget'  => '',
+		'before_title'  => '',
+		'after_title'   => '',
 	) );
 
 }

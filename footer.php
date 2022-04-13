@@ -5,7 +5,13 @@
 </div>
 
 <?php if ( is_active_sidebar( 'main_navigation' ) ) : ?>
-	<?php dynamic_sidebar( 'main_navigation' ); ?>
+	
+		<?php dynamic_sidebar( 'main_navigation' ); ?>
+	
+	<?php else: ?>
+	
+		<?php require_once ( 'navigation.php' ); ?>
+	
 <?php endif; ?>
 
     <div class="open-overlay">
