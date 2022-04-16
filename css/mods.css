@@ -30,39 +30,15 @@ h1, h2, h3, h4, h4, h5, h6{
 }
 
 .wp-block-columns{
-	display: flex;
-	flex-wrap: wrap;
-	gap: 40px;
+	gap: 2em !important;
 }
 
-.are-vertically-aligned-center, .is-vertically-aligned-center{
-	align-items: center;
-}
-
-.are-vertically-aligned-top, .is-vertically-aligned-top{
-	align-items: flex-start;
-}
-
-.are-vertically-aligned-bottom, .is-vertically-aligned-bottom{
-	align-items:  flex-end;
+.wp-block-column{
+	margin-right: 0 !important;
+	margin-left: 0 !important;
 }
 
 .reverse-columns{
 	flex-direction: row-reverse;
 }
 
-.wp-block-column{
-	display:flex;
-	width: calc(100% - 40px);
-	flex-wrap: wrap;
-	justify-content: center;
-	flex: 1 1 200px;
-	margin-left:  0 !important;
-	margin-right: 0 !important;
-}
-
-@media only screen and (max-width:759px) {
- .wp-block-column{
-    flex: 1 1 100%;
-  }
-}
