@@ -20,7 +20,7 @@ function register_my_menu() {
 // Add Styles
 function prefix_add_footer_styles() {
 	wp_enqueue_style( 'googlefonts', '//fonts.googleapis.com/css?family=Material+Icons',true,'1.1','all');
-	wp_enqueue_style( 'fonts', '//fonts.googleapis.com/css2?family=Lato:wght@300;400&family=Oswald:wght@300;400&family=Yesteryear&display=swap',true,'1.1','all');
+	wp_enqueue_style( 'fonts', '//fonts.googleapis.com/css2?family=Lato:wght@300;400&family=Montserrat:wght@400;500&display=swap',true,'1.1','all');
     wp_enqueue_style( 'styles', get_template_directory_uri() . '/css/main_min.css',true,'1.1','all');
     wp_enqueue_style( 'mods', get_template_directory_uri() . '/css/mods.css',true,'1.1','all');
 
