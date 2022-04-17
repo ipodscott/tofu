@@ -30,7 +30,7 @@ h1, h2, h3, h4, h4, h5, h6{
 }
 
 .wp-block-columns{
-	gap: 2em !important;
+	gap: 0 2em !important;
 }
 
 .wp-block-column{
