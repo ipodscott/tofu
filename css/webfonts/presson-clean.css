@@ -1,0 +1,27 @@
+/*
+Font: 		Presson Clean
+Style: 		Regular
+URL: 		https://www.youworkforthem.com/font/T10393/the-newsstand-collection
+Foundry: 	Bartosz Wesolek
+Foundry: 	https://www.youworkforthem.com/designer/1224/bartosz-wesolek
+Copyright:	Bart Wesolek. 2018. All Rights Reserved
+Version: 	17
+Created:	January 29, 2019
+License: 	https://www.youworkforthem.com/font-license 
+License: 	The WebFont(s) listed in this document must follow the YouWorkForThem
+			WebFont license rules. All other parties are strictly restricted 
+			from using the WebFonts(s) listed without a purchased license. 
+			All details above must always remain unaltered and visible in your CSS.
+*/
+
+@font-face {
+	font-family: 'PressonClean';
+	src: url('presson-clean.eot');
+	src: url('presson-clean.eot?#iefix') format('embedded-opentype'),
+             url('presson-clean.woff2') format('woff2'),
+	     url('presson-clean.woff') format('woff'),
+	     url('presson-clean.ttf') format('truetype'),
+	     url('presson-clean.svg#youworkforthem') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}

@@ -4,11 +4,16 @@
 }
 
 h1, h2, h3, h4, h4, h5, h6{
-	 font-family: 'Montserrat', sans-serif;
+	 font-family: 'PressonClean', sans-serif;
 	 font-size: calc(18px + (24 - 18) * ((100vw - 300px) / (1600 - 300)));
 	 line-height: 1.25em;
 	margin: 0;
 	padding: 0;
+}
+
+.parallax-overlay-content h1, .parallax-overlay-content h2{
+	letter-spacing: 0.1em;
+	font-size: calc(24px + (48 - 24) * ((100vw - 300px) / (1600 - 300)));
 }
 
 .fancy{
@@ -26,7 +31,7 @@ h1, h2, h3, h4, h4, h5, h6{
 }
 
 .acc-head{
-	font-family: 'Montserrat', sans-serif;
+	font-family: 'PressonClean', sans-serif;
 }
 
 .wp-block-columns{
@@ -41,4 +46,3 @@ h1, h2, h3, h4, h4, h5, h6{
 .reverse-columns{
 	flex-direction: row-reverse;
 }
-

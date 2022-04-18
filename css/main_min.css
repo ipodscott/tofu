@@ -61,13 +61,12 @@ p{
 }
 
 h1, h2, h3, h4, h4, h5, h6{
-	 font-family: 'Montserrat', sans-serif;
-	 font-size: calc(18px + (24 - 18) * ((100vw - 300px) / (1600 - 300)));
-	 line-height: 1.25em;
+	font-family: 'PressonClean', sans-serif;
+	font-size: calc(18px + (24 - 18) * ((100vw - 300px) / (1600 - 300)));
+	line-height: 1.25em;
 	margin: 0;
 	padding: 0;
 	width: 100%;
-	text-transform: uppercase;
 }
 
 
@@ -77,6 +76,7 @@ h1, h2, h3, h4, h4, h5, h6{
     position: relative;
     clear: both;
     margin-left: 0;
+    padding-bottom: 80px;
     transition: all 0.5s;
     float: left;
     width: 100%;
@@ -90,6 +90,7 @@ h1, h2, h3, h4, h4, h5, h6{
     user-select: none;
     transform: scale(1);
 }
+
 
 .all.stop-scroll{
  	transform: scale(0.95) !important;
@@ -221,7 +222,7 @@ body.fade {
 	text-align: center;
     font-weight: 700;
     text-transform: uppercase;
-    padding: 0;
+    padding: 15px 0 15px 0;
     color: #999;
     font-size: 18px;
     font-family: Lato, 'sans-serif';
@@ -262,4 +263,29 @@ body.fade {
     z-index: 999;
     display: none;
     opacity: .8
+}
+
+footer{
+	background-color: rgba(0, 0, 0, 0.9);
+	color: #fff;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	position: fixed;
+	min-height: 80px;
+	bottom: 0;
+	left: 0;
+	width: 100%;
+	transition: all 0.5s;
+	}
+
+footer p{
+	margin: 0;
+	padding: 0;
+	font-size: 9px;
+	letter-spacing: 0.25em;
+}
+
+.footer-down {
+    bottom: -90px;
 }
