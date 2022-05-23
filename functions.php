@@ -111,3 +111,5 @@ function primary_widgets_init() {
 
 }
 add_action( 'widgets_init', 'primary_widgets_init' );
+
+include_once "patterns/pattern_controller.php";
